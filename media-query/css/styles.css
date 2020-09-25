@@ -9,4 +9,10 @@
     body {
            background-color: yellowgreen;
     }
+    .comumn {
+              float: left;
+              width: 220px;
+              padding: 20px;
+
+    }
 }
