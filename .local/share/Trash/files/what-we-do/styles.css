@@ -1,0 +1,23 @@
+@media screen and (min-width: 480px){
+    body {
+          background-color: black;
+          color: white;
+         }
+    h1 {
+        color: brown;
+        font-weight: bolder;
+        text-align: left;
+       }
+}
+@media screen and (min-width:720px){
+
+   body {
+         background-color: burlywood;
+         color: black;
+         font-family: sans-serif;
+        }
+   img {
+        border-radius: 10px;
+        height: 500px;
+       }
+}
