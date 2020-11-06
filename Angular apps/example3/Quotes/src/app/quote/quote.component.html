@@ -1,0 +1,10 @@
+<div>
+    <h1>Inspiration Quotes</h1>
+    <ul>
+      <div *ngFor='let quote of quotes; let i = index'>
+          <li>{{quote.name}}</li>
+          <app-quote-detail [quote]='quote'></app-quote-detail>
+      </div>
+    </ul>
+    <p *ngIf='quotes.length >2'>This Quotes are many!</p>
+  </div>

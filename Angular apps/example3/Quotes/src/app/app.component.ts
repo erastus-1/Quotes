@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quotes:string[];
-
-constructor(){
-   this.quotes = ['Mahatma Gandhi','Albert Einstein','Mark Twain','Mahatma Gandhi']
-}
+  
 }
