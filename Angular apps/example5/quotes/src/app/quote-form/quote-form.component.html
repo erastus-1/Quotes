@@ -1,9 +1,10 @@
 <h1>New Quote(s).</h1>
+<hr>
 <div>
     <form (ngSubmit)='submitQuote()' #quotesForm='ngForm'>
-        <p style="text-decoration: double; border-color: aqua;"><strong>Your favourite Quote:</strong></p>
+        <p style="text-decoration: double; border-color: aqua;"><strong>Add Your Favourite Quote:</strong></p>
         <div class="form-group">
-            <label for="authorName">Author Name:</label>
+            <label for="authorName"><strong>Author Name:</strong></label>
             <input type="text" class="form-control" id="authorName" [(ngModel)]="newQuote.authorName" name="author" #authorName='ngModel' placeholder="Author-Name" required>
             <div [hidden]="authorName.valid || authorName.pristine" class="alert alert-danger">
               <p>Name is required</p>
@@ -11,7 +12,7 @@
           </div>
 
           <div class="form-group">
-            <label for="description">Quote:</label>
+            <label for="description"><strong>Quote:</strong></label>
             <textarea type="text" class="form-control" id="description" [(ngModel)]="newQuote.description" name="description" #description='ngModel' rows="8" placeholder="write your favourite quote here.." required>
             </textarea>
             <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
@@ -20,7 +21,7 @@
           </div>
 
           <div class="form-group">
-            <label for="submitterName">Submitted by:</label>
+            <label for="submitterName"><strong>Submitted by:</strong></label>
             <input type="text" class="form-control" id="submitterName" [(ngModel)]="newQuote.submitterName" name="submitterName" #submitterName='ngModel' placeholder="write your name here.." required>
             <div [hidden]="submitterName.valid || submitterName.pristine" class="alert alert-danger">
               <p>Submitter Name is required</p>
