@@ -6,10 +6,11 @@
         <div *ngFor='let quote of quotes; let i = index'>
           <div class="card">
             <div class="card-header" style="font-weight: bolder">New Quote:</div>
+            <div class="card-body">
             <p><b>Authored by:</b> {{ quote.authorName }}</p>
             <p>{{ quote.description }}</p>
             <p>
-              This quote was submitted {{ quote.dateSubmitted | dateCount }} days
+              This quote was submitted {{ quote.dateSubmitted |dateCount }} days
               ago!
             </p>
             <p><b>Submitted by:</b> {{ quote.submitterName }}</p>
@@ -31,12 +32,17 @@
                
               </form>
             </div>
+            </div>
+            <br/>
                      <!-- endOfVotes -->
 
                      <!-- deleteButton -->
+
+             <div class="card-footer">    
             <app-quote-details *ngIf="quote" [quote]="quote" (isComplete)= "delete($event, i)">
 
             </app-quote-details>
+          </div> 
             </div>
             </div>
             </div>
