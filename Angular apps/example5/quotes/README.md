@@ -48,7 +48,7 @@ Run ng e2e to execute the end-to-end tests.
 
 **Known Bugs**
 
-The fields pop required error after submission.
+The fields pop up the required error message after submission.
 The user can still be able to submit a form without filling out all fields.
 The user can also submit an empty form.
 
